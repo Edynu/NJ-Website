@@ -19,7 +19,7 @@ const authenticate = async (username, password) => {
     console.error('Authentication error:', error);
   }
 
-  return true;
+  return false;
 };
 
 export default authenticate;

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -120,7 +121,7 @@ header li a:hover:not(.active) {
   color: white;
 }
 
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -132,4 +133,149 @@ header li a:hover:not(.active) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header li button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header li button:hover {
+  background-color: #111;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content:lefts;
+}
+
+.dropdown button {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Light Theme */
+.app.light header {
+  background-color: #333;
+  color: white;
+}
+
+.app.light .servers table,
+.app.light .login {
+  border-color: #ccc;
+}
+
+.app.light .servers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.app.light .servers tr:hover {
+  background-color: #ddd;
+}
+
+.app.light .footer {
+  background-color: #333;
+  color: white;
+}
+
+.app.light {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark Theme */
+.app.dark header {
+  background-color: #222;
+  color: #ddd;
+}
+
+.app.dark .servers table,
+.app.dark .login {
+  border-color: #444;
+}
+
+.app.dark .servers th,
+.app.dark .servers td {
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.app.dark .servers tr:nth-child(even) {
+  background-color: #6f6e6e;
+}
+
+.app.dark .servers tr:hover {
+  background-color: #444;
+}
+
+.app.dark .footer {
+  background-color: #222;
+  color: #ddd;
+}
+
+.app.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.app {
+  height: 100vh;
+}
+
+.settings {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.settings-form {
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+
+.settings-form label {
+display: block;
+}
+
+.settings-form input,
+.settings-form select {
+width: 80%;
+padding: 5px;
+margin-left: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.green-button {
+margin-top: 20px;
+padding: 10px;
+border-radius: 5px;
+border: none;
+background-color: #4CAF50;
+color: white;
 }
