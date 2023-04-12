@@ -83,3 +83,12 @@
   .character-info-table tr:nth-child(even) {
     background-color: #7f7e7e;
   }
+
+  .characterbutton {
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

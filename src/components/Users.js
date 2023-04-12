@@ -169,9 +169,7 @@ const Users = () => {
   return (
     <div className="users">
       <div className="users-left">
-      <button className="green-button" onClick={fetchUsers}>
-          Refresh
-        </button>
+
         <input
           className="users-search"
           type="text"
@@ -179,22 +177,28 @@ const Users = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Search users..."
         />
-        <button className="green-button" onClick={() => setViewOption('info')}>
-          Info
+        <button className="green-button" onClick={fetchUsers}>
+          Refresh
         </button>
-        <button className="green-button" onClick={() => setViewOption('character')}>
-          Character
-        </button>
-        
         <ul className="users-list">
           {filteredUsers.map((user) => (
           <li key={user.id} onClick={() => handleUserSelection(user)}>
             {`${user.role}`} ({user.nickname})
+            
           </li>
         ))}
         </ul>
+        
       </div>
       <div className="users-right">{renderRightContent()}</div>
+          <div className="characterbutton">
+          <button className="green-button" onClick={() => setViewOption('character')}>
+              Character
+          </button>
+          <button className="green-button" onClick={() => setViewOption('info')}>
+          Info
+        </button>
+          </div>
       {error.show && (
                       <ErrorPopup
                         type={error.type}
@@ -204,6 +208,7 @@ const Users = () => {
                       />
                     )}
     </div>
+    
   );
 };
 
