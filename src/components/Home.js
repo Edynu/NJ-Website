@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import nomadImage from '../images/nomad.png';
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <h1>Welcome to Nomad Journey Management</h1>
       <p>This is the home page of our management system.</p>
       <p>Please use the navigation menu above to access other pages.</p>
-    </div>
+      <img src={nomadImage} alt="Nomad" style={{ width: '25%', height: 'auto' }} />    </div>
   );
 };
 
