@@ -13,7 +13,7 @@ const Users = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('https://localhost:7039/api/Users/get-users');
+      const response = await axios.get('https://localhost:7254/api/Users/get-users');
       setUsers(response.data);
     } catch (error) {
       showError('error', 'Failed to fetch users', error);

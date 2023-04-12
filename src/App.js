@@ -89,7 +89,7 @@ function App() {
   
   const getUserData = async () => {
     try {
-      const response = await axios.get('https://localhost:7039/api/Users/get-user', {
+      const response = await axios.get('https://localhost:7254/api/Users/get-user', {
         params: { emailOrNickname: username, password: password },
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
