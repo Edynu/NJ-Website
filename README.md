@@ -1,4 +1,4 @@
-# Managment system for Nomay Journey project - Based on Dune, Last Oasis
+# Managment system for Nomad Journey project - Based on Dune, Last Oasis
 
 ## Private ONLY
 
