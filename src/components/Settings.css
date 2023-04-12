@@ -1,27 +1,121 @@
 .settings {
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .settings-left {
-  flex: 1;
-  margin-right: 1rem;
+  flex: auto;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
+.settings-left button {
+  margin-bottom: 0.5em;
+}
+
+
 .settings-right {
-  flex: 2;
+  flex: 16;
   border-left: 1px solid #ccc;
-  padding-left: 1rem;
+  padding-left: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.settings-right button {
+  margin-bottom: 0.5em;
 }
 
 .settings-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
 .settings-form label {
   margin-bottom: 0.5rem;
 }
 
-.settings-form input {
-  margin-bottom: 1rem;
+
+.user-data {
+  margin-bottom: 1em;
 }
+
+.password-change,
+.register-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.password-change form,
+.register-user form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.password-inputs div,
+.register-inputs div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.password-inputs label,
+.register-inputs label {
+  margin-right: 0.5em;
+  text-align: right;
+  width: 150px;
+}
+
+.password-inputs input,
+.register-inputs input,
+.password-row input {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.blank-div {
+  height: 10em;
+}
+
+.password-change label,
+.register-user label {
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.user-data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.user-data-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.settings-header {
+  text-align: center;
+}
+

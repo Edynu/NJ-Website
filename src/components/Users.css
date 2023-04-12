@@ -1,6 +1,8 @@
 .users {
     display: flex;
-    margin: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
@@ -39,20 +41,45 @@
   .users-list li:hover {
     background-color: #ddd;
   }
+
+  .user-info-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
   
-  .green-button {
-    display: inline-block;
-    margin: 5px 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    }
-    
-    .green-button:hover {
-    background-color: #45a049;
-    }
+  .user-info-table th,
+  .user-info-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
   
+  .user-info-table th {
+
+    font-weight: bold;
+  }
+  
+  .user-info-table tr:nth-child(even) {
+    background-color: #7f7e7e;
+  }
+
+  .character-info-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .character-info-table th,
+  .character-info-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .character-info-table th {
+
+    font-weight: bold;
+  }
+  
+  .character-info-table tr:nth-child(even) {
+    background-color: #7f7e7e;
+  }

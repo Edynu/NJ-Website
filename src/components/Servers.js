@@ -86,10 +86,10 @@ const [expandedServerIndex, setExpandedServerIndex] = useState(null);
                 <tr>
                   <td colSpan="8">
                     <div className="dropdown">
-                      <button>Start</button>
-                      <button>Restart</button>
-                      <button>Stop</button>
-                      <button>Manage</button>
+                      <button className='green-button'>Start</button>
+                      <button className='green-button'>Restart</button>
+                      <button className='green-button'>Stop</button>
+                      <button className='green-button'>Manage</button>
                     </div>
                   </td>
                 </tr>
@@ -98,7 +98,7 @@ const [expandedServerIndex, setExpandedServerIndex] = useState(null);
           ))}
         </tbody>
       </table>
-      <button onClick={generateFakeServer}>Generate Fake Server</button>
+      <button className="green-button" onClick={generateFakeServer}>Generate Fake Server</button>
     </div>
   );
 };
